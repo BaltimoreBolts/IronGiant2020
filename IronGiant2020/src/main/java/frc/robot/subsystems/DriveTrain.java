@@ -13,6 +13,8 @@ public class DriveTrain extends SubsystemBase {
   /**
    * Creates a new DriveTrain.
    */
+
+  this.navigation.arcade(driver.getRawAxis(Controller.XBOX.STICK.LEFT.X), driver.getRawAxis(Controller.XBOX.STICK.LEFT.Y));
   public DriveTrain() {
 
   }
@@ -20,5 +22,10 @@ public class DriveTrain extends SubsystemBase {
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
+  }
+
+  public void arcadeDrive(){
+
+    
   }
 }
