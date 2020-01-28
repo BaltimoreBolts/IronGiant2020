@@ -17,6 +17,18 @@ package frc.robot;
  */
 public final class Constants {
 
+    // To import this elsewhere use import import frc.robot.Constants.OIConstants;
+    public static final class OIConstants {
+        //These need to be public within the class so they are accessible
+        public static final int DRIVER_CONTROLLER = 0;
+    }
+
+    public static final class DriveConstants {
+        public static final int LEFT_DRIVE_MOTOR = 0;
+        public static final int RIGHT_DRIVE_MOTOR = 1;
+
+    }
+
     // Add controller constant
     public static final class Controller {
         public static final class XBOX {
@@ -66,4 +78,6 @@ public final class Constants {
 
 
     }
+
+
 }

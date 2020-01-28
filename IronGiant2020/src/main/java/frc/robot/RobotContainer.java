@@ -14,6 +14,9 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.InstantCommand;
 import edu.wpi.first.wpilibj2.command.RunCommand;
 
+import frc.robot.Constants.Controller;
+import frc.robot.Constants.OIConstants;
+
 /**
  * This class is where the bulk of the robot should be declared.  Since Command-based is a
  * "declarative" paradigm, very little robot logic should actually be handled in the {@link Robot}
@@ -23,6 +26,8 @@ import edu.wpi.first.wpilibj2.command.RunCommand;
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final DriveTrain robotDT = new DriveTrain();
+
+  private XboxController driver = new XboxController(OIConstants.DRIVER_CONTROLLER);
 
   //private final ExampleCommand m_autoCommand = new ExampleCommand(robotDT);
 
